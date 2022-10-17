@@ -1,4 +1,4 @@
-Feature: 
+/** Feature: 
 Background: Navigation
     Given Navigate to TicketManager website ==> "https://app01-qa10.spotlighttms.com/"
 @smoke @sanity
@@ -24,3 +24,4 @@ Scenario: Forgot Username
 Examples: 
     |code| email               | warning     |
     |ACME| uaslam1000@gmail.com| User already|
+    **/
