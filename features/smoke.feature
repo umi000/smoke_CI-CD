@@ -1,5 +1,4 @@
 Feature: smoke
-
   Background: Navigation
     Given Navigate to TicketManager website ==> "https://app01-qa10.spotlighttms.com/"
   @smoke @sanity
@@ -18,12 +17,10 @@ Feature: smoke
         Then Navigate to CustomerFeatures tab 
         Then Verify Hide External Ticket is off
         Then Select Marketplace ticket
-        Then Insert Order Details for "<order_type>"
-        Then Change order status as "<status>" for "<order_type>" purchase
-        Then Approve Order
+        Then Insert Order Details for "<order_type>" 
    Examples:
-    |username                      | password    |   user  |order_type    | status | Customer|
-    |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   |Business| order_approve| UIautomator|
+    |username                      | password    |   user  |order_type    | status       | Customer|
+    |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   |Business      | order_approve| UIautomator|
     @smoke @sanity @functional
     Scenario: QA-39==>  Purchase Marketplace ticket from (Search Detail) with "<order_type>" Purchase and status as "<status>" (with invitee) for ==> "<user>"
         Then Select Marketplace ticket
@@ -60,17 +57,17 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
    Examples:
     |username                          | password  |user|Ticket type          |Order_type  |status        |status2      | status3     |is_approve_directly| PaymentData  |
     |umair.aslam.ssa@techtronix.biz    | Test_12345|CSA |All Available Tickets|Business Use|order_approve |order_approve|order_approve|0                  | First Data QA|
-    @smoke @sanity  
-    Scenario: QA-43==>  Verify Is Dynamic Map available? and check No of tickets dynamically for "<user>"
-        Then Dismiss_Card_SSA
-        Then Select Ticket Type Dropdown as "<Ticket type>"
-        Then Scroll page Down
-        Then Select random event from Landing page
-        Then Read map tickets Dynamically & Verify No of tickets
-        Then Verify Reset button
-   Examples:
-    |username                          | password  |user|Ticket type  |Order_type  |status        |status2      | status3     |is_approve_directly| PaymentData  |
-    |umair.aslam.ssa@techtronix.biz    | Test_12345|SSA |Market Place |Business Use|order_approve |order_approve|order_approve|0                  | First Data QA|
+##     @smoke @sanity  
+##     Scenario: QA-43==>  Verify Is Dynamic Map available? and check No of tickets dynamically for "<user>"
+##         Then Dismiss_Card_SSA
+##         Then Select Ticket Type Dropdown as "<Ticket type>"
+##         Then Scroll page Down
+##         Then Select random event from Landing page
+##         Then Read map tickets Dynamically & Verify No of tickets
+##         Then Verify Reset button
+##    Examples:
+##     |username                          | password  |user|Ticket type  |Order_type  |status        |status2      | status3     |is_approve_directly| PaymentData  |
+##     |umair.aslam.ssa@techtronix.biz    | Test_12345|SSA |Market Place |Business Use|order_approve |order_approve|order_approve|0                  | First Data QA|
    @regression
     Scenario: QA-44==> REPORT:"<R_name>"" ==> Verify Count
         Then Navigate to "<R_name>" Report
@@ -126,9 +123,9 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
         Then Change first status as "<status>" for "<Order_type>" from pending manager approval state "<is_approve_directly>"
         Then Process Shipment using FedEx
     Examples:
-        |           username           | password |user| Order_type |    status   |   status2   |   status3   |is_approve_directly| PaymentData |no_of_tickets|
-        |umair.aslam.ssa@techtronix.biz|Test_12345| SSA|Business Use|order_approve|order_approve|order_approve|         1         |First Data QA|      1      |
-    Scenario: QA-46==>  Ship order through UPS #fail due to UPS
+        |           username           | password |user| Order_type |    status   |   status2   |   status3   |is_approve_directly| PaymentData |no_of_tickets|loc             |type          | 
+        |umair.aslam.ssa@techtronix.biz|Test_12345| SSA|Business Use|order_approve|order_approve|order_approve|         1         |First Data QA|      1      |All Location    |Company Owned |
+    Scenario: QA-46==>  Ship order through UPS 
         Then Dismiss_Card_SSA_
         Then Navigate to CustomerFeatures tab 
         Then Verify UPS Integration is enable
@@ -150,11 +147,10 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
         Then Insert all "<no_of_tickets>" invitee details
         Then Submit for "<user>"
         Then Change first status as "<status>" for "<Order_type>" from pending manager approval state "<is_approve_directly>"
-        Then Process Multiple "<no_of_tickets>" Shipment using Second method
+        Then Process Multiple "<no_of_tickets>" Shipment using Second method 
     Examples:
         |           username           | password |user| Order_type |    status   |   status2   |   status3   |is_approve_directly| PaymentData |no_of_tickets|
         |umair.aslam.ssa@techtronix.biz|Test_12345| SSA|Business Use|order_approve|order_approve|order_approve|         1         |First Data QA|      2      |
-    ################################
     Scenario: QA-46==>  Ship order through FedEx/UPS with multiple invitees using first method and print
         Then Dismiss_Card_SSA_
         Then Select Company Owned ticket for "<Order_type>" and user "<user>" for shipping
@@ -185,8 +181,7 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
         Examples:
     |username                          | password    |   user  |Order_type  | status |      manager_approver |email|
     |umair.aslam.ssa@techtronix.biz    | Test_12345  |   SSA   |Personal Use| order_deny |  tmautomator.csa  | tmautomator.csa@techtronix.biz|
-    
-       @regression
+      @regression
        Scenario: QA-50==>  Submit order those are in Pending by approval manager for "<Order_type>" and status as "<status>" with invitee
         Then Select Company Owned ticket for "<Order_type>" and user "<user>" 
         Then Insert Ticket details as order type "<Order_type>" for "<user>"
@@ -194,9 +189,9 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
         Then Submit for "<user>"
         Then Change first status as "<status>" for "<Order_type>" from pending manager approval state "<is_approve_directly>"
    Examples:
-    |username                          | password    |   user  |Order_type  |customer   | status        | is_approve_directly|
-    |umair.aslam.ssa@techtronix.biz    | Test_12345  |   SSA   |Business Use|uiautomator| order_approve | 1                  |
-    |umair.aslam.ssa@techtronix.biz    | Test_12345  |   SSA   |Business Use|uiautomator|order_deny    | 0                  |
+    |username                          | password    |   user  |loc         |type          |Order_type  |customer   | status        | is_approve_directly|
+    |umair.aslam.ssa@techtronix.biz    | Test_12345  |   SSA   |All Location|Company Owned |Business Use|uiautomator| order_approve | 1                  |
+    |umair.aslam.ssa@techtronix.biz    | Test_12345  |   SSA   |All Location|Company Owned |Business Use|uiautomator|order_deny    | 0                  |
 
     Scenario: QA-50==>  Submit order on FCFS basis with order type "<Order_type>" without invitee
         Then Navigate to CustomerFeatures tab
@@ -211,7 +206,7 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
     
     Scenario: QA-51==> REPORT:"<R_name>"==> Check if every report and list page is opening and verify Select all filter and remove all filter
         Then Navigate to "<R_name>" Report
-        Then Verify No of records After removing all Filters
+        Then Verify No of records After removing all Filters 
         Then Verify select all Filter
    Examples:
     |username                      | password    |   user  |R_name                |Order_type     | loc            | type         | event| Customer| no_of_tickets|
@@ -246,14 +241,14 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
     |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   |Invitee Information|Business Use   |All Locations   |Company Owned | arena| uiautomator|  1|
     Scenario: QA-51==> REPORT:"<R_name>"==> verify Pagination 
         Then Navigate to "<R_name>" Report
-        Then Verifiy Pagination
+        Then Verifiy Pagination 
    Examples:
     |username                      | password    |   user  |R_name        |Order_type     | loc            | type         | event| Customer| no_of_tickets|
     |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   |Shipping|Business Use   |All Locations   |Company Owned | arena| uiautomator|  1|
     Scenario: Logout SSA (SSA Cases Completed)
         Then Dismiss_Card_SSA_
         Then logout SSA
-    #######################################################################################
+        #########################################
   @regression @E2E 
   Scenario: QA-38==>  login as a "<user>"
     When We Enter Login Creds "<username>" and "<password>"
@@ -267,8 +262,8 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
     Scenario: QA-39==>  MarketPlace Module maintainance with "<order_type>" Purchase (with invitee) and status as "<status>" for ==> "<user>"
         Then Select Marketplace ticket_
         Then Insert_Order_Details_for "<order_type>" purchase_and_for "<user>"
-        Then Change order status as "<status>" for "<order_type>" purchase
-        Then Approve Order
+        # Then Change order status as "<status>" for "<order_type>" purchase
+        # Then Approve Order
    Examples:
     |username                      | password        |   user           |order_type    | status |
     |tmautomator.csa@techtronix.biz| tmautomator123  |   CSA            |Business      | order_approve|
@@ -343,7 +338,7 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
     Examples:
     |username                          | password      |user|Order_type  |status        |status2      | status3     |is_approve_directly|
     |tmautomator.csa@techtronix.biz    | tmautomator123|CSA |Business Use|order_approve |order_approve|order_approve|0|
-#############################################
+################################
     @regression @E2E 
   Scenario: QA-38==>  login as a "<user>"
     When We Enter Login Creds "<username>" and "<password>"
@@ -362,7 +357,6 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
    Examples:
     |username         | password       | user   |order_type     | loc         | event| Customer   | no_of_tickets| status|
     |tm.automator     | tmautomator123 | Admin  |Business       |All Location  |arena |uiautomator | 1            | order_approve |
-   #correct
 Scenario: QA-42==>  Create order from (Order Detail) with order type "<Order_type>" with invitee
         Then Dismiss_Card
         Then Select Location as "<loc>" and ticket as "<type>"
@@ -380,7 +374,7 @@ Scenario: QA-42==>  Create order from (Order Detail) with order type "<Order_typ
     Examples:
     |username                      | password       |   user |Order_type     | loc            | type         | event| Customer| no_of_tickets|
     |tm.automator                  | tmautomator123 | Admin  |Personal Use   |All Location    |Company Owned |arena|  uiautomator | 1|
-#############################################
+########################
 @regression @E2E 
   Scenario: QA-38==>  login as a "<user>"
     When We Enter Login Creds "<username>" and "<password>"
@@ -422,7 +416,7 @@ Scenario: QA-42==>  Create order from (Order Detail) with order type "<Order_typ
     Examples:
     |username           | password      |   user |
     |tmautomator.user   | tmautomator123|Standard User   |
-#####################################3333
+######################################
   @smoke @sanity
   Scenario: QA-38==>  login with username only
     When We Enter Login Creds "<username>" and "<password>"
