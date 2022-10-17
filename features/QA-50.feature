@@ -2,7 +2,6 @@
 Feature: Order Approval Maintainance
     Background: Navigation
         Given Navigate to TicketManager website
-##1Done-------------------------------
     @E2E @Functional @regression
     Scenario: Submit order with order type <Order_type> and change status as <status>
         When We Enter Login Creds "<username>" and "<password>"
