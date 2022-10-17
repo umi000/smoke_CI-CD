@@ -4,8 +4,8 @@ const fs = require('fs')
 var path = require('path');
 
 const options = {
-    // headless: true,
-    headless: false,
+    headless: true,
+    // headless: false,
     slowMo: 50,
     timeout: 60000,
 };
