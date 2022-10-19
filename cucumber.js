@@ -1,7 +1,5 @@
 const common = `
   --require runner/hooks.js 
-  --require runner/assertions.js
-  --require steps/steps_graph.js 
   --require steps/steps_order_creation.js
   --require steps/steps_market_maintainance.js
   --require steps/steps_order_approval.js
@@ -11,6 +9,8 @@ const common = `
   --require steps/steps_DvmSeatics.js
   --require steps/steps_Report.js
   --require steps/steps_Register_forgot_user.js
+  --require runner/assertions.js
+  --require steps/steps_graph.js 
   --require report.js
   `;
 

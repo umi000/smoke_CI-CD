@@ -279,8 +279,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">playwright-cucumberjs</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=Features>Passed: 1</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=Features>Failed: 0</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=Features>Passed: 0</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=Features>Failed: 1</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Mon Oct 17 2022 17:36:17 GMT+0500 (Pakistan Standard Time)</div>
+      <div class="generated-on">Tue Oct 18 2022 18:01:45 GMT+0500 (Pakistan Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -303,7 +303,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-passed">
+<div class="feature-failed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -313,14 +313,14 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeatureplaywright_cucumberjs58f852f4-24ad-431c-ae74-e867ce0b7a9d">
+                    <a data-toggle="collapse" href="#collapseFeatureplaywright_cucumberjs2c5104b5-c077-457a-8510-fde0f5bcef7e">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>
+                        <b>Feature:</b>smoke
                         <span class="label-container">
-              <span class="label label-success"
-                                                         title="5 Scenarios Passed">5</span>
               
+              <span class="label label-danger"
+                                                         title="2 Scenarios Failed">2</span>
               
               
               
@@ -329,7 +329,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeatureplaywright_cucumberjs58f852f4-24ad-431c-ae74-e867ce0b7a9d" class="panel-collapse collapse">
+            <div id="collapseFeatureplaywright_cucumberjs2c5104b5-c077-457a-8510-fde0f5bcef7e" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -339,18 +339,18 @@ pre {
                             <h4 class="panel-title">
                                 
                                 
-                                <div class="tags"> <span class="tag"> @smoke</span>
-                                     <span class="tag"> @sanity</span>
+                                <div class="tags"> <span class="tag"> @regression</span>
+                                     <span class="tag"> @E2E</span>
                                     
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs836ea2b2-d2f5-466f-b6c5-3cd63abb0e8d">
+                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs28cd0f96-6b32-4f15-8deb-f2b82098ce24">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 70px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Register already created user
+                                            <b>Scenario:</b>QA-38==>  login as a "SSA"
                                         </div>
                                         <div>
                             <span class="label-container">
@@ -358,8 +358,10 @@ pre {
                                                                title="3 Steps Passed">3</span>
                               
                               
-                              
-                              
+                              <span class="label label-warning"
+                                                                title="1 Steps Skipped">1</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -368,7 +370,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioplaywright_cucumberjs836ea2b2-d2f5-466f-b6c5-3cd63abb0e8d"
+                        <div id="collapseScenarioplaywright_cucumberjs28cd0f96-6b32-4f15-8deb-f2b82098ce24"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -389,7 +391,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               9s 359ms
+                               18s 14ms
                               </span>
                             
                          
@@ -423,11 +425,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> We Enter Company code as &quot;ACME&quot; and Email as &quot;uaslam1000@gmail.com&quot;</span>
+                          <span> We Enter Login Creds &quot;umair.aslam.ssa@techtronix.biz&quot; and &quot;Test_12345&quot;</span>
                             
                           
                               <span class="step-duration">
-                               3s 832ms
+                               325ms
                               </span>
                             
                          
@@ -461,11 +463,131 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> verify warning: &quot;User already&quot;</span>
+                          <span> move on landing page</span>
                             
                           
                               <span class="step-duration">
-                               95ms
+                               520ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> select customer as &quot;uiautomator1&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               18s 636ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_03"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_03"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_03">
+                                            <br> page.$eval: Error: failed to find element matching selector "xpath=/html/body/div/div[2]/div[3]/div/div[2]/div[2]/form/div/div/ul/li"
+    at LoginPage.select_customer (C:\Users\hp\office\test_CI-CD\page_object\login.page.js:247:35)
+    at async World.(anonymous) (C:\Users\hp\office\test_CI-CD\steps\steps_Login.js:31:5)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_03" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>page.$eval: Error: failed to find element matching selector "xpath=/html/body/div/div[2]/div[3]/div/div[2]/div[2]/form/div/div/ul/li"
+    at LoginPage.select_customer (C:\Users\hp\office\test_CI-CD\page_object\login.page.js:247:35)
+    at async World.(anonymous) (C:\Users\hp\office\test_CI-CD\steps\steps_Login.js:31:5)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Dismiss_Card_SSA</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
                               </span>
                             
                          
@@ -498,27 +620,27 @@ pre {
                             <h4 class="panel-title">
                                 
                                 
-                                <div class="tags"> <span class="tag"> @smoke</span>
-                                     <span class="tag"> @sanity</span>
-                                    
+                                <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjsfd358d76-b6bc-46b0-83fe-bce8df464e43">
+                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs38d18c28-3d70-4cd8-a784-d062e19377b7">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 70px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Register already created user
+                                            <b>Scenario:</b>QA-39==>  Purchase Marketplace ticket from (Search Detail) with "Business" Purchase and status as "order_approve" (with invitee) for ==> "SSA"
                                         </div>
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
+                                                               title="1 Steps Passed">1</span>
                               
                               
-                              
-                              
+                              <span class="label label-warning"
+                                                                title="3 Steps Skipped">3</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -527,7 +649,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioplaywright_cucumberjsfd358d76-b6bc-46b0-83fe-bce8df464e43"
+                        <div id="collapseScenarioplaywright_cucumberjs38d18c28-3d70-4cd8-a784-d062e19377b7"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -548,7 +670,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               4s 50ms
+                               4s 946ms
                               </span>
                             
                          
@@ -576,55 +698,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> We Enter Company code as &quot;ACM&quot; and Email as &quot;uaslam1000@gmail.com&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               3s 807ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> verify warning: &quot;Invalid code&quot;</span>
+                          <span> Navigate to CustomerFeatures tab</span>
                             
                           
                               <span class="step-duration">
-                               87ms
+                               53s 474ms
                               </span>
                             
                          
@@ -637,87 +721,54 @@ pre {
                                 
 
                                     
+                                    <a href="#error0_11"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_11"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_11">
+                                            <br> page.click: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "a#dropdownMenuProfile)div)div)img"
+============================================================
+    at MarketMaintainance.select_customer_feature (C:\Users\hp\office\test_CI-CD\page_object\MarketMaintainance.page.js:18:20)
+    at World.(anonymous) (C:\Users\hp\office\test_CI-CD\steps\steps_market_maintainance.js:13:30)</pre>
+                                    </div>
 
-                                    
+                                <div class="modal fade" id="error-modal-0_11" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>page.click: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "a#dropdownMenuProfile)div)div)img"
+============================================================
+    at MarketMaintainance.select_customer_feature (C:\Users\hp\office\test_CI-CD\page_object\MarketMaintainance.page.js:18:20)
+    at World.(anonymous) (C:\Users\hp\office\test_CI-CD\steps\steps_market_maintainance.js:13:30)</pre>
+                                                </h5>
+                                            </div>
 
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags"> <span class="tag"> @smoke</span>
-                                     <span class="tag"> @sanity</span>
-                                    
-                                </div>
-                                
-                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs9088eaa6-e598-47b6-af97-bd5f6ba96764">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Register already created user
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div><small><i></i></small></div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenarioplaywright_cucumberjs9088eaa6-e598-47b6-af97-bd5f6ba96764"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div></div>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> Navigate to TicketManager website ==&gt; &quot;https://app01-qa10.spotlighttms.com/&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               4s 319ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
+                                </div>
+
 
                                     
 
@@ -735,138 +786,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> We Enter Company code as &quot;ACME&quot; and Email as &quot;uaslam1000@gmail.co&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               3s 846ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> verify warning: &quot;Invalid mail&quot;</span>
+                          <span> Verify Hide External Ticket is off</span>
                             
                           
                               <span class="step-duration">
-                               75ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags"> <span class="tag"> @smoke</span>
-                                     <span class="tag"> @sanity</span>
-                                    
-                                </div>
-                                
-                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs0b125f58-af10-4b34-a20e-e8f6e0c71ef9">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Forgot Password
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div><small><i></i></small></div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenarioplaywright_cucumberjs0b125f58-af10-4b34-a20e-e8f6e0c71ef9"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div></div>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> Navigate to TicketManager website ==&gt; &quot;https://app01-qa10.spotlighttms.com/&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               4s 239ms
+                               < 1ms
                               </span>
                             
                          
@@ -894,138 +824,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> we forgot password then we have to enter username as &quot;Umair.aslam&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               4s 595ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> verify password Warning: &quot;Umair.aslam&quot;</span>
+                          <span> Select Marketplace ticket</span>
                             
                           
                               <span class="step-duration">
-                               86ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags"> <span class="tag"> @smoke</span>
-                                     <span class="tag"> @sanity</span>
-                                    
-                                </div>
-                                
-                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs873cd109-20c3-4eb9-b563-9778af9dc85e">
-                                    <div>
-
-                                        <div style="padding-right: 30px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Forgot Username
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
-                              
-                              
-                              
-                              
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div><small><i></i></small></div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenarioplaywright_cucumberjs873cd109-20c3-4eb9-b563-9778af9dc85e"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div></div>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> Navigate to TicketManager website ==&gt; &quot;https://app01-qa10.spotlighttms.com/&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               4s 293ms
+                               < 1ms
                               </span>
                             
                          
@@ -1053,55 +862,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> we forgot username then we have to enter email as &quot;uaslam1000@gmail.com&quot;</span>
-                            
-                          
-                              <span class="step-duration">
-                               2s 816ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> verify username Warning: &quot;uaslam1000@gmail.com&quot;</span>
+                          <span> Insert Order Details for &quot;Business&quot;</span>
                             
                           
                               <span class="step-duration">
-                               91ms
+                               < 1ms
                               </span>
                             
                          
@@ -1161,8 +932,8 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
-                                                            "passed" : 1,
+                                                            "failed" : 1,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -1171,8 +942,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
-                                                            "passed" : 5,
+                                                            "failed" : 2,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

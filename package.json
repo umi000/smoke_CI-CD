@@ -4,9 +4,11 @@
     "devDependencies": {
         "chai": "^4.3.4",
         "cucumber": "^7.0.0-rc.0",
+        "cucumber-html-report-generator": "^1.0.33",
         "cucumber-html-reporter": "^5.5.0",
         "cucumber-junit": "^1.7.1",
         "cucumberjs-junitxml": "^1.0.0",
+        "multiple-cucumber-html-reporter": "^3.0.1",
         "playwright": "^1.22.2"
     },
     "keywords": [
