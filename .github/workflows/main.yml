@@ -11,7 +11,9 @@ jobs:
       - uses: actions/setup-node@v3
       - uses: microsoft/playwright-github-action@v1
       - name: Install dependencies 
-        run: npm install && npx playwright install         
+        run: npm install && npx playwright install 
+      - name: set Report Path
+        run: SETX /M CUCUMBER_PUBLISH_TOKEN 793ed325-f0af-45c1-badf-1626d5507bea
       - name: Run tests
         run: npm test
       - name: Upload test results
