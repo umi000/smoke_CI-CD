@@ -4,29 +4,29 @@
     "elements": [
       {
         "description": "",
-        "id": "smoke;qa-38==>--login-as-a-\"ssa\"",
+        "id": "qa-182:-cwf-settings-maintainance;qa-181==>--enable-settings-for-cwf",
         "keyword": "Scenario",
-        "line": 8,
-        "name": "QA-38==>  login as a \"SSA\"",
+        "line": 4,
+        "name": "QA-181==>  Enable settings for CWF",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 3,
-            "name": "Navigate to TicketManager website ==> \"https://app01-qa10.spotlighttms.com/\"",
+            "name": "Navigate to TicketManager website",
             "match": {
-              "location": "steps\\steps_Login.js:8"
+              "location": "steps\\steps_Login.js:11"
             },
             "result": {
               "status": "failed",
-              "duration": 35000000,
-              "error_message": "page.waitForNavigation: net::ERR_NAME_NOT_RESOLVED\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\test_CI-CD\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\test_CI-CD\\steps\\steps_Login.js:9:21)"
+              "duration": 6052000000,
+              "error_message": "page.waitForNavigation: net::ERR_NAME_NOT_RESOLVED\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Playwright-Cucumber\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Playwright-Cucumber\\steps\\steps_Login.js:12:21)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
+            "line": 5,
             "name": "We Enter Login Creds \"umair.aslam.ssa@techtronix.biz\" and \"Test_12345\"",
             "match": {
               "location": "steps\\steps_Login.js:17"
@@ -39,7 +39,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 6,
             "name": "move on landing page",
             "match": {
               "location": "steps\\steps_Login.js:24"
@@ -52,8 +52,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "select customer as \"uiautomator1\"",
+            "line": 7,
+            "name": "select customer as \"acme_cwf\"",
             "match": {
               "location": "steps\\steps_Login.js:30"
             },
@@ -61,61 +61,39 @@
               "status": "skipped",
               "duration": 0
             }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "Dismiss_Card_SSA",
-            "match": {
-              "location": "steps\\steps_Login.js:43"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
           }
         ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 7
-          },
-          {
-            "name": "@E2E",
-            "line": 7
-          }
-        ],
+        "tags": [],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "smoke;qa-39==>--purchase-marketplace-ticket-from-(search-detail)-with-\"business\"-purchase-and-status-as-\"order_approve\"-(with-invitee)-for-==>-\"ssa\"",
+        "id": "qa-182:-cwf-settings-maintainance;qa-181:-validate-default-states-and-default-image",
         "keyword": "Scenario",
-        "line": 16,
-        "name": "QA-39==>  Purchase Marketplace ticket from (Search Detail) with \"Business\" Purchase and status as \"order_approve\" (with invitee) for ==> \"SSA\"",
+        "line": 32,
+        "name": "QA-181: Validate Default states and default image",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 3,
-            "name": "Navigate to TicketManager website ==> \"https://app01-qa10.spotlighttms.com/\"",
+            "name": "Navigate to TicketManager website",
             "match": {
-              "location": "steps\\steps_Login.js:8"
+              "location": "steps\\steps_Login.js:11"
             },
             "result": {
               "status": "failed",
-              "duration": 35000000,
-              "error_message": "page.waitForNavigation: net::ERR_NAME_NOT_RESOLVED\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\test_CI-CD\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\test_CI-CD\\steps\\steps_Login.js:9:21)"
+              "duration": 68000000,
+              "error_message": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://app01-qa10.spotlighttms.com/\n=========================== logs ===========================\nnavigating to \"https://app01-qa10.spotlighttms.com/\", waiting until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Playwright-Cucumber\\page_object\\login.page.js:33:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Playwright-Cucumber\\steps\\steps_Login.js:12:21)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 17,
-            "name": "Navigate to CustomerFeatures tab",
+            "line": 33,
+            "name": "Navigate to Configurable Workflow",
             "match": {
-              "location": "steps\\steps_market_maintainance.js:11"
+              "location": "steps\\steps_cwf.js:43"
             },
             "result": {
               "status": "skipped",
@@ -125,10 +103,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "Verify Hide External Ticket is off",
+            "line": 34,
+            "name": "Sort workflows by Date updated Desc and edit workflow",
             "match": {
-              "location": "steps\\steps_market_maintainance.js:16"
+              "location": "steps\\steps_cwf.js:47"
             },
             "result": {
               "status": "skipped",
@@ -138,23 +116,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "Select Marketplace ticket",
+            "line": 35,
+            "name": "Add State as \"Pending Manager\" and verify UI elements",
             "match": {
-              "location": "steps\\steps_market_maintainance.js:23"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "Insert Order Details for \"Business\"",
-            "match": {
-              "location": "steps\\steps_market_maintainance.js:72"
+              "location": "steps\\steps_cwf.js:50"
             },
             "result": {
               "status": "skipped",
@@ -166,11 +131,11 @@
         "type": "scenario"
       }
     ],
-    "id": "smoke",
+    "id": "qa-182:-cwf-settings-maintainance",
     "line": 1,
     "keyword": "Feature",
-    "name": "smoke",
+    "name": "QA-182: CWF Settings Maintainance",
     "tags": [],
-    "uri": "features\\smoke.feature"
+    "uri": "features\\QA-182.feature"
   }
 ]

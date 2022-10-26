@@ -33,5 +33,7 @@ module.exports = {
         LinkTextOrderId: `//div[@class='col-lg-2 col-md-2']//a[1]`,
         DashboardBodyPath1: 'xpath=/html/body/app-root/div/app-home/div[3]',
         DashboardBodyPath: `//*[@id="skip-content-main-container"]`,
+        IconAddItem: `//span[@title='Add']`,
+        Submit: `//input[@type='submit']`
     },
 };

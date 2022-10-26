@@ -279,8 +279,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">playwright-cucumberjs</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=Features>Passed: 0</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=Features>Failed: 1</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=Features>Passed: 1</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=Features>Failed: 0</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Tue Oct 18 2022 18:01:45 GMT+0500 (Pakistan Standard Time)</div>
+      <div class="generated-on">Wed Oct 26 2022 10:05:10 GMT+0500 (Pakistan Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -303,7 +303,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-failed">
+<div class="feature-passed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -313,14 +313,14 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeatureplaywright_cucumberjs2c5104b5-c077-457a-8510-fde0f5bcef7e">
+                    <a data-toggle="collapse" href="#collapseFeatureplaywright_cucumberjsfc4a5147-7856-4c61-ba1d-4ef2bda42928">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>smoke
+                        <b>Feature:</b>QA-182: CWF Settings Maintainance
                         <span class="label-container">
+              <span class="label label-success"
+                                                         title="4 Scenarios Passed">4</span>
               
-              <span class="label label-danger"
-                                                         title="2 Scenarios Failed">2</span>
               
               
               
@@ -329,7 +329,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeatureplaywright_cucumberjs2c5104b5-c077-457a-8510-fde0f5bcef7e" class="panel-collapse collapse">
+            <div id="collapseFeatureplaywright_cucumberjsfc4a5147-7856-4c61-ba1d-4ef2bda42928" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -339,29 +339,25 @@ pre {
                             <h4 class="panel-title">
                                 
                                 
-                                <div class="tags"> <span class="tag"> @regression</span>
-                                     <span class="tag"> @E2E</span>
-                                    
+                                <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs28cd0f96-6b32-4f15-8deb-f2b82098ce24">
+                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs62a4da77-6005-40d7-a90c-7cf5d4ee9348">
                                     <div>
 
-                                        <div style="padding-right: 70px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>QA-38==>  login as a "SSA"
+                                            <b>Scenario:</b>QA-181==>  Enable settings for CWF
                                         </div>
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="3 Steps Passed">3</span>
+                                                               title="7 Steps Passed">7</span>
                               
                               
-                              <span class="label label-warning"
-                                                                title="1 Steps Skipped">1</span>
-                              <span class="label label-danger"
-                                                               title="1 Steps Failed">1</span>
+                              
+                              
                               
                             </span>
                                         </div>
@@ -370,7 +366,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioplaywright_cucumberjs28cd0f96-6b32-4f15-8deb-f2b82098ce24"
+                        <div id="collapseScenarioplaywright_cucumberjs62a4da77-6005-40d7-a90c-7cf5d4ee9348"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -387,11 +383,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> Navigate to TicketManager website ==&gt; &quot;https://app01-qa10.spotlighttms.com/&quot;</span>
+                          <span> Navigate to TicketManager website</span>
                             
                           
                               <span class="step-duration">
-                               18s 14ms
+                               11s 261ms
                               </span>
                             
                          
@@ -429,7 +425,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               325ms
+                               288ms
                               </span>
                             
                          
@@ -467,7 +463,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               520ms
+                               291ms
                               </span>
                             
                          
@@ -495,17 +491,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> select customer as &quot;uiautomator1&quot;</span>
+                          <span> select customer as &quot;acme_cwf&quot;</span>
                             
                           
                               <span class="step-duration">
-                               18s 636ms
+                               32s 108ms
                               </span>
                             
                          
@@ -516,50 +512,6 @@ pre {
                       </span>
                                 
                                 
-
-                                    
-                                    <a href="#error0_03"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_03"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_03">
-                                            <br> page.$eval: Error: failed to find element matching selector "xpath=/html/body/div/div[2]/div[3]/div/div[2]/div[2]/form/div/div/ul/li"
-    at LoginPage.select_customer (C:\Users\hp\office\test_CI-CD\page_object\login.page.js:247:35)
-    at async World.(anonymous) (C:\Users\hp\office\test_CI-CD\steps\steps_Login.js:31:5)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_03" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>page.$eval: Error: failed to find element matching selector "xpath=/html/body/div/div[2]/div[3]/div/div[2]/div[2]/form/div/div/ul/li"
-    at LoginPage.select_customer (C:\Users\hp\office\test_CI-CD\page_object\login.page.js:247:35)
-    at async World.(anonymous) (C:\Users\hp\office\test_CI-CD\steps\steps_Login.js:31:5)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                                     
 
@@ -577,17 +529,93 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> Dismiss_Card_SSA</span>
+                          <span> Navigate to CustomerFeatures tab</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               36s 294ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Verify Configurable Workflow is Enable</span>
+                            
+                          
+                              <span class="step-duration">
+                               4s 870ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Verify Default Workflow is Disable</span>
+                            
+                          
+                              <span class="step-duration">
+                               10s 780ms
                               </span>
                             
                          
@@ -623,24 +651,22 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs38d18c28-3d70-4cd8-a784-d062e19377b7">
+                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjsb9b02dcd-e5f4-417e-9e1a-b929a3ca1ab2">
                                     <div>
 
-                                        <div style="padding-right: 70px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>QA-39==>  Purchase Marketplace ticket from (Search Detail) with "Business" Purchase and status as "order_approve" (with invitee) for ==> "SSA"
+                                            <b>Scenario:</b>QA-181: Verify UI elements Configurable workflow list page
                                         </div>
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="1 Steps Passed">1</span>
+                                                               title="7 Steps Passed">7</span>
                               
                               
-                              <span class="label label-warning"
-                                                                title="3 Steps Skipped">3</span>
-                              <span class="label label-danger"
-                                                               title="1 Steps Failed">1</span>
+                              
+                              
                               
                             </span>
                                         </div>
@@ -649,7 +675,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioplaywright_cucumberjs38d18c28-3d70-4cd8-a784-d062e19377b7"
+                        <div id="collapseScenarioplaywright_cucumberjsb9b02dcd-e5f4-417e-9e1a-b929a3ca1ab2"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -666,11 +692,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> Navigate to TicketManager website ==&gt; &quot;https://app01-qa10.spotlighttms.com/&quot;</span>
+                          <span> Navigate to TicketManager website</span>
                             
                           
                               <span class="step-duration">
-                               4s 946ms
+                               7s 38ms
                               </span>
                             
                          
@@ -698,17 +724,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> Navigate to CustomerFeatures tab</span>
+                          <span> Dismiss_Card_SSA</span>
                             
                           
                               <span class="step-duration">
-                               53s 474ms
+                               16s 924ms
                               </span>
                             
                          
@@ -721,64 +747,247 @@ pre {
                                 
 
                                     
-                                    <a href="#error0_11"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_11"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_11">
-                                            <br> page.click: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for selector "a#dropdownMenuProfile)div)div)img"
-============================================================
-    at MarketMaintainance.select_customer_feature (C:\Users\hp\office\test_CI-CD\page_object\MarketMaintainance.page.js:18:20)
-    at World.(anonymous) (C:\Users\hp\office\test_CI-CD\steps\steps_market_maintainance.js:13:30)</pre>
-                                    </div>
 
-                                <div class="modal fade" id="error-modal-0_11" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>page.click: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for selector "a#dropdownMenuProfile)div)div)img"
-============================================================
-    at MarketMaintainance.select_customer_feature (C:\Users\hp\office\test_CI-CD\page_object\MarketMaintainance.page.js:18:20)
-    at World.(anonymous) (C:\Users\hp\office\test_CI-CD\steps\steps_market_maintainance.js:13:30)</pre>
-                                                </h5>
-                                            </div>
+                                    
 
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Verify Configurable Workflow is Visible in Menu</span>
+                            
+                          
+                              <span class="step-duration">
+                               10s 216ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Verify Headers</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 425ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Verify Title</span>
+                            
+                          
+                              <span class="step-duration">
+                               63ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Verify Create Button</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 11ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Verify List elements</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 172ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjs20b68e3f-fadc-4492-ab91-a1c63f6a8ff8">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>QA-181: Validate Default states and default image
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="5 Steps Passed">5</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
                                         </div>
                                     </div>
-                                </div>
-
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenarioplaywright_cucumberjs20b68e3f-fadc-4492-ab91-a1c63f6a8ff8"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
                                 
                                 
                                 
@@ -786,17 +995,17 @@ waiting for selector "a#dropdownMenuProfile)div)div)img"
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> Verify Hide External Ticket is off</span>
+                        <span class="keyword highlight">Given </span>
+                          <span> Navigate to TicketManager website</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               6s 261ms
                               </span>
                             
                          
@@ -824,17 +1033,17 @@ waiting for selector "a#dropdownMenuProfile)div)div)img"
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> Select Marketplace ticket</span>
+                          <span> Dismiss_Card_SSA</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               16s 431ms
                               </span>
                             
                          
@@ -862,17 +1071,288 @@ waiting for selector "a#dropdownMenuProfile)div)div)img"
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> Insert Order Details for &quot;Business&quot;</span>
+                          <span> Verify Configurable Workflow is Visible in Menu</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               9s 529ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Validate Default states Created, Approved, Denied</span>
+                            
+                          
+                              <span class="step-duration">
+                               21s 656ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Validate Default image contain all 3 Default states</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 5ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenarioplaywright_cucumberjsda870f23-5ca7-4d23-9a13-a74bcb76abc2">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>QA-181: Validate Default states and default image
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenarioplaywright_cucumberjsda870f23-5ca7-4d23-9a13-a74bcb76abc2"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> Navigate to TicketManager website</span>
+                            
+                          
+                              <span class="step-duration">
+                               6s 249ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Navigate to Configurable Workflow</span>
+                            
+                          
+                              <span class="step-duration">
+                               26s 208ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Sort workflows by Date updated Desc and edit workflow</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 430ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Add State as &quot;Pending Manager&quot; and verify UI elements</span>
+                            
+                          
+                              <span class="step-duration">
+                               11s 138ms
                               </span>
                             
                          
@@ -932,8 +1412,8 @@ waiting for selector "a#dropdownMenuProfile)div)div)img"
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 1,
-                                                            "passed" : 0,
+                                                            "failed" : 0,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -942,8 +1422,8 @@ waiting for selector "a#dropdownMenuProfile)div)div)img"
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 2,
-                                                            "passed" : 0,
+                                                            "failed" : 0,
+                                                            "passed" : 4,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

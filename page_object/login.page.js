@@ -95,6 +95,42 @@ class LoginPage {
         );
         expect(username).to.equal(warnings.trim());
     }
+
+    async select_customer(customerName) {
+        // Fill input[name="customerName"]
+        await page.fill(locator.locators.CustomerName.toString(), customerName);
+        this.sleep(1000);
+        await page.press(locator.locators.CustomerName.toString(), 'ArrowDown');
+        this.sleep(3000);
+        await page.press(locator.locators.CustomerName.toString(), 'Enter');
+        this.sleep(6000);
+        let customer = await page.$eval('xpath=/html/body/div/div[2]/div[3]/div/div[2]/div[2]/form/div/div/ul/li',
+            (el) => el.innerHTML
+        );
+        this.sleep(2000);
+        try {} catch (error) {
+            if (customer != '') {
+                // Click text=Continue
+                await Promise.all([
+                    page.click('text=Continue')
+                    // page.waitForNavigation({ url: 'https://app01-qa10.spotlighttms.com/app/' }),
+                ]);
+            }
+        }
+        customer = await page.$eval('xpath=/html/body/div/div[2]/div[3]/div/div[2]/div[2]/form/div/div/ul/li',
+            (el) => el.innerHTML
+        );
+        this.sleep(2000);
+        if (customer.length > 1) {
+            // if (customer === 'UIAutomator1 (uiautomator, 6126)') {
+            // Click text=Continue
+            await Promise.all([
+                page.click('text=Continue')
+                // page.waitForNavigation({ url: 'https://app01-qa10.spotlighttms.com/app/' }),
+            ]);
+        }
+        this.sleep(6000);
+    }
     async Create_New_Customer(CustomerName) {
         await page.click(`(//div[@class='main-content']//a)[1]`);
         await page.fill(`(//div[@class='form_error']/following-sibling::input)[1]`, CustomerName.toString());
@@ -234,46 +270,6 @@ class LoginPage {
         await page.click(LandingLocator.CartIcon.toString());
         this.sleep(3000);
         await page.click(LandingLocator.Request.toString());
-    }
-    async select_customer() {
-
-        // Fill input[name="customerName"]
-        await page.fill(locator.locators.CustomerName.toString(), 'uiautomator');
-        this.sleep(1000);
-        await page.press(locator.locators.CustomerName.toString(), 'ArrowDown');
-        this.sleep(3000);
-        await page.press(locator.locators.CustomerName.toString(), 'Enter');
-        this.sleep(6000);
-        let customer = await page.$eval('xpath=/html/body/div/div[2]/div[3]/div/div[2]/div[2]/form/div/div/ul/li',
-            (el) => el.innerHTML
-        );
-        this.sleep(2000);
-
-        try {
-
-        } catch (error) {
-            if (customer === 'UIAutomator1 (uiautomator, 6126)') {
-                // Click text=Continue
-                await Promise.all([
-                    page.click('text=Continue')
-                    // page.waitForNavigation({ url: 'https://app01-qa10.spotlighttms.com/app/' }),
-                ]);
-            }
-
-        }
-        customer = await page.$eval('xpath=/html/body/div/div[2]/div[3]/div/div[2]/div[2]/form/div/div/ul/li',
-            (el) => el.innerHTML
-        );
-        this.sleep(2000);
-        if (customer === 'UIAutomator1 (uiautomator, 6126)') {
-            // Click text=Continue
-            await Promise.all([
-                page.click('text=Continue')
-                // page.waitForNavigation({ url: 'https://app01-qa10.spotlighttms.com/app/' }),
-            ]);
-        }
-        this.sleep(6000);
-
     }
     async logout_SSA() {
         this.Dismiss_Card_SSA();

@@ -1,9 +1,9 @@
 Feature: smoke
   Background: Navigation
     Given Navigate to TicketManager website ==> "https://app01-qa10.spotlighttms.com/"
-  # @smoke @sanity
-  # Scenario: QA-38==>  Is Portal Deployed
-  #   When We Enter Login Creds "<username>" and "<password>"
+  @smoke @sanity
+  Scenario: QA-38==>  Is Portal Deployed
+    When We Enter Login Creds "<username>" and "<password>"
   @regression @E2E 
   Scenario: QA-38==>  login as a "<user>"
     When We Enter Login Creds "<username>" and "<password>"
@@ -426,7 +426,6 @@ Scenario: QA-42==>  Create order from (Order Detail) with order type "<Order_typ
    Examples:
      |username                      | password    |
      |tmautomator.csa@techtronix.biz|             |
-     
   @smoke @sanity
   Scenario: QA-38==>  login with password only
     When We Enter Login Creds "<username>" and "<password>"
