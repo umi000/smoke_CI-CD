@@ -1,4 +1,4 @@
-Feature: smoke
+Feature: smoke ci cd
   Background: Navigation
     Given Navigate to TicketManager website ==> "https://app01-qa10.spotlighttms.com/"
   @smoke @sanity
