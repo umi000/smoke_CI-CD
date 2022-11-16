@@ -56,7 +56,7 @@ Scenario: QA-42==>  Create order from (Landing page) with order type "<Order_typ
         Then read map
    Examples:
     |username                          | password  |user|Ticket type          |Order_type  |status        |status2      | status3     |is_approve_directly| PaymentData  |
-    |umair.aslam.ssa@techtronix.biz    | Test_12345|CSA |All Available Tickets|Business Use|order_approve |order_approve|order_approve|0                  | First Data QA|
+    |umair.aslam.ssa@techtronix.biz    | Test_12345|CSA |All Available Tickets|Business Use|order_approve |order_approve|order_approve| 0                 | First Data QA|
 ##     @smoke @sanity  
 ##     Scenario: QA-43==>  Verify Is Dynamic Map available? and check No of tickets dynamically for "<user>"
 ##         Then Dismiss_Card_SSA
