@@ -39,7 +39,7 @@ class LandingPage {
         await page.click(LandingLocator.Request.toString());
 
         await Promise.all([
-            page.waitForNavigation( /*{ url: 'https://app01-qa10.spotlighttms.com/app/order-details/38737' }*/ ),
+            page.waitForNavigation( /*{ url: 'https://app1.spotlighttms.com/app/order-details/38737' }*/ ),
             page.click(LandingLocator.View_Cart_Checkout.toString())
         ]);
     }
@@ -126,11 +126,11 @@ class LandingPage {
         await page.press(LandingLocator.NameInvitee2.toString(), 'Enter');
 
         // Fill [placeholder="Company"]
-        await page.fill(LandingLocator.CompanyInvitee.toString(), 'TechTronix Corp');
+        await page.fill(LandingLocator.CompanyInvitee.toString(), 'Techtronix');
         this.sleep(3000);
         await page.press(LandingLocator.CompanyInvitee.toString(), 'Enter');
 
-        await page.fill(LandingLocator.EmailInvitee.toString(), 'amir.abbasi@techtronix.biz');
+        await page.fill(LandingLocator.EmailInvitee.toString(), 'umair.aslam@techtronix.biz');
         this.sleep(3000);
         await page.press(LandingLocator.EmailInvitee.toString(), 'Enter');
 
@@ -138,20 +138,18 @@ class LandingPage {
         await page.click(LandingLocator.TitleInvitee.toString());
         await page.fill(LandingLocator.TitleInvitee.toString(), 'RSVP');
         this.sleep(3000);
-        // } else if (user = 'CSA') {
-
-        // }
-
-        // Click [placeholder="Phone"]
         await page.click(LandingLocator.PhoneInvitee.toString());
-        await page.fill(LandingLocator.PhoneInvitee.toString(), '+92300000000');
+        await page.fill(LandingLocator.PhoneInvitee.toString(), '+16505130514');
+        await page.fill(`//input[@placeholder='Shipping Email']`, 'umair.aslam@gmail.com');
         this.sleep(1000);
         // Click text=ADD TO LIST
         await page.click(LandingLocator.AddToList.toString());
-        this.sleep(6000);
-        await page.click(`(//button[contains(@class,'dropdown-toggle btn')])[2]`);
-        await page.click(`//button[text()=' 0 passes ']`);
-        this.sleep(6000);
+        // this.sleep(4000);
+        try {
+            await page.click(`(//button[contains(@class,'dropdown-toggle btn')])[2]`);
+            await page.click(`//button[text()=' 0 passes ']`);
+        } catch {}
+        this.sleep(4000);
 
 
     }
@@ -168,14 +166,14 @@ class LandingPage {
                 // page.goto(page.url().toString())
                 this.sleep(3000);
                 // Click text=ADD GUEST
-                await page.click(LandingLocator.AddGuest2.toString());
+                await page.click(LandingLocator.AddGuest.toString());
                 this.sleep(3000);
                 // Fill [placeholder="Name"]
                 await page.click(LandingLocator.NameInvitee.toString());
                 this.sleep(3000);
-                await page.fill(LandingLocator.NameInvitee2.toString(), 'UIAutomator');
+                await page.fill(LandingLocator.NameInvitee1.toString(), 'UIAutomator');
                 this.sleep(3000);
-                await page.press(LandingLocator.NameInvitee2.toString(), 'Enter');
+                await page.press(LandingLocator.NameInvitee1.toString(), 'Enter');
 
                 // Fill [placeholder="Company"]
                 await page.fill(LandingLocator.CompanyInvitee.toString(), 'TechTronix Corp');

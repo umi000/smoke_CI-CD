@@ -223,7 +223,15 @@ class Report {
     async navigate_to_report____(_report) {
 
         this.sleep(5000);
-        if (_report == 'Shipping') { ///////////////////////////
+        if (_report == 'Workflow Assignment Report') {
+            await page.click(`div#newui-header>ul>li:nth-of-type(5)>a`);
+            console.log("Workflow Assignment Report");
+            this.sleep(2000);
+            await page.hover(`//*[@id="newui-header"]/ul/li[5]/ul/li[3]/a`);
+            this.sleep(1000);
+            await page.click(`//*[@id="newui-header"]/ul/li[5]/ul/li[3]/ul/li[8]/a`);
+
+        } else if (_report == 'Shipping') { ///////////////////////////
             await page.click(`//a[@aria-label='Reports']`);
             console.log("shipping");
             this.sleep(2000);

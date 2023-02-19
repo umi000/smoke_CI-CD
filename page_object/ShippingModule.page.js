@@ -14,10 +14,9 @@ class ShippingModule {
     }
     async test() {
         this.sleep(5000);
-
         await Promise.all([
             page.waitForNavigation({ timeout: 50000 }),
-            page.goto(`https://app01-qa10.spotlighttms.com/app/event-detail/22484180`)
+            page.goto(`https://app1.spotlighttms.com/procurementRequest/show/id/4117029`)
         ]);
         this.sleep(5000);
     }
@@ -163,13 +162,6 @@ class ShippingModule {
         await page.click(`input[name='selectedRow[]']`);
         this.sleep(2000);
         await page.selectOption(`select[name='actionsDropDown']`, 'Cancel');
-
-
-        // page.on('dialog', (dialog) => {
-        //     console.log(dialog.message());
-        // });
-        // await page.click('button'); // Will hang here
-
         this.sleep(2000);
     }
     async Process_UPS_Shipment() {

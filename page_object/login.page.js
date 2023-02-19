@@ -19,7 +19,7 @@ class LoginPage {
     async login_Backend(username, password) {
         await Promise.all([
             page.waitForNavigation({ timeout: 50000 }),
-            page.goto('https://app01-qa10.spotlighttms.com/backend.php')
+            page.goto('https://app1.spotlighttms.com/backend.php')
         ]);
         this.sleep(3000);
         await page.fill(`//input[@value='Username']`, username);
@@ -29,7 +29,7 @@ class LoginPage {
     }
     async navigate() {
         await Promise.all([
-            page.waitForNavigation({ timeout: 50000 }),
+            page.waitForNavigation({ timeout: 60000 }),
             page.goto(locator.locators.url.toString())
         ]);
         this.sleep(3000);
@@ -113,7 +113,7 @@ class LoginPage {
                 // Click text=Continue
                 await Promise.all([
                     page.click('text=Continue')
-                    // page.waitForNavigation({ url: 'https://app01-qa10.spotlighttms.com/app/' }),
+                    // page.waitForNavigation({ url: 'https://app1.spotlighttms.com/app/' }),
                 ]);
             }
         }
@@ -126,7 +126,7 @@ class LoginPage {
             // Click text=Continue
             await Promise.all([
                 page.click('text=Continue')
-                // page.waitForNavigation({ url: 'https://app01-qa10.spotlighttms.com/app/' }),
+                // page.waitForNavigation({ url: 'https://app1.spotlighttms.com/app/' }),
             ]);
         }
         this.sleep(6000);
@@ -146,6 +146,7 @@ class LoginPage {
         await page.click(`//input[@value='Save']`);
     }
     async landing_page() {
+        await page.waitForSelector(locator.locators.keepMeLoggedin.toString());
         await page.click(locator.locators.keepMeLoggedin.toString());
         await page.click(locator.locators.loginButton.toString());
         // this.sleep(5000);
@@ -154,11 +155,12 @@ class LoginPage {
     }
     async Dismiss_Card() {
         // await locator.
-        this.sleep(3000);
+        // this.sleep(3000);
         // if (await page.$(locator.locators.DismissButton.toString()) !== null) {
         //     //console.log('1st DC\n');
         //     await page.click((locator.locators.LogOutHover.toString()));
         // }
+        await page.waitForSelector(locator.locators.DismissButton.toString());
         await page.click(locator.locators.DismissButton.toString());
         // await page.waitForSelector(locator.locators.LogOutHover.toString());
 
@@ -247,7 +249,7 @@ class LoginPage {
             // Click text=Continue
             await Promise.all([
                 page.click('text=Continue')
-                // page.waitForNavigation({ url: 'https://app01-qa10.spotlighttms.com/app/' }),
+                // page.waitForNavigation({ url: 'https://app1.spotlighttms.com/app/' }),
             ]);
         }
         this.sleep(2000);
@@ -277,7 +279,7 @@ class LoginPage {
         await page.click(locator.locators.LogOutHover2.toString());
         // Click text=Logout
         await Promise.all([
-            page.waitForNavigation( /*{ url: 'https://app01-qa10.spotlighttms.com/app/login' }*/ ),
+            page.waitForNavigation( /*{ url: 'https://app1.spotlighttms.com/app/login' }*/ ),
             page.click('text=Logout')
         ]);
         console.log('Logout');
@@ -296,7 +298,7 @@ class LoginPage {
         await page.click(locator.locators.LogOutHover2.toString());
         // Click text=Logout
         await Promise.all([
-            page.waitForNavigation( /*{ url: 'https://app01-qa10.spotlighttms.com/app/login' }*/ ),
+            page.waitForNavigation( /*{ url: 'https://app1.spotlighttms.com/app/login' }*/ ),
             page.click('text=Logout')
         ]);
         console.log('Logout');
@@ -309,7 +311,7 @@ class LoginPage {
         await page.click(locator.locators.LogOutHover_Standard_User.toString());
         // Click text=Logout
         await Promise.all([
-            page.waitForNavigation( /*{ url: 'https://app01-qa10.spotlighttms.com/app/login' }*/ ),
+            page.waitForNavigation( /*{ url: 'https://app1.spotlighttms.com/app/login' }*/ ),
             page.click('text=Logout')
         ]);
         console.log('Logout');

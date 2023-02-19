@@ -1,7 +1,7 @@
 module.exports = {
     locators: {
-        CompanySetupUrl: 'https://app01-qa10.spotlighttms.com/customerFeatures/list',
-        StubHubUrl: 'https://app01-qa10.spotlighttms.com/customerProfile/companySetup',
+        CompanySetupUrl: 'https://app1.spotlighttms.com/customerFeatures/list',
+        StubHubUrl: 'https://app1.spotlighttms.com/customerProfile/companySetup',
         HideExternalBit: 'xpath=/html/body/div[5]/div[4]/div/div[4]/div[2]/div[1]/div[2]/div[4]/div[3]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[2]/td[9]',
         ticketTypeDropdown: '#dropdownMenu2 > span',
         selectMarketPlace: `(//button[@id='2'])[1]`,

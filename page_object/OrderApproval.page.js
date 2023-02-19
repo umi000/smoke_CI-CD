@@ -9,7 +9,7 @@ const loginpage = new LoginPage();
 const shippingModule = new ShippingModule();
 
 class OrderApproval {
-    OrderUrl_ = 'https://app01-qa10.spotlighttms.com/procurementRequest/show/id/';
+    OrderUrl_ = 'https://app1.spotlighttms.com/procurementRequest/show/id/';
     Orderid = '';
     ///function to sleep
     async sleep(milliseconds) {

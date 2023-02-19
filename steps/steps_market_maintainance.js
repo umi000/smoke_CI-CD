@@ -10,6 +10,7 @@ const marketMaintainance = new MarketMaintainance();
 
 Then('Navigate to CustomerFeatures tab', async() => {
     await loginpage.Dismiss_Card_SSA();
+    await marketMaintainance.end_tour();
     await marketMaintainance.select_customer_feature();
 
 });

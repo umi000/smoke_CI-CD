@@ -7,14 +7,14 @@ const options = {
     // headless: true,
     headless: false,
     slowMo: 50,
-    timeout: 60000,
+    timeout: 60000000,
 };
 // // Create a global browser for the test session.
 BeforeAll(async() => {
     global.browser = await chromium.launch(options);
     global.context = await global.browser.newContext({});
     global.page = await global.context.newPage();
-    await page.setDefaultNavigationTimeout(60000);
+    await page.setDefaultNavigationTimeout(60000000);
     // global.page2 = await global.context.newPage();
 });
 

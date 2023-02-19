@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": "qa-182:-cwf-settings-maintainance;qa-181==>--enable-settings-for-cwf",
+        "id": "qa-184:-cwf-settings-maintainance;qa-182==>--enable-settings-for-cwf",
         "keyword": "Scenario",
         "line": 4,
-        "name": "QA-181==>  Enable settings for CWF",
+        "name": "QA-182==>  Enable settings for CWF",
         "steps": [
           {
             "arguments": [],
@@ -18,9 +18,8 @@
               "location": "steps\\steps_Login.js:11"
             },
             "result": {
-              "status": "failed",
-              "duration": 6052000000,
-              "error_message": "page.waitForNavigation: net::ERR_NAME_NOT_RESOLVED\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Playwright-Cucumber\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Playwright-Cucumber\\steps\\steps_Login.js:12:21)"
+              "status": "passed",
+              "duration": 16119000000
             }
           },
           {
@@ -32,8 +31,8 @@
               "location": "steps\\steps_Login.js:17"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 295000000
             }
           },
           {
@@ -45,17 +44,350 @@
               "location": "steps\\steps_Login.js:24"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 357000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "select customer as \"acme_cwf\"",
+            "name": "Dismiss_Card",
             "match": {
-              "location": "steps\\steps_Login.js:30"
+              "location": "steps\\steps_Login.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14174000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Navigate to CustomerFeatures tab",
+            "match": {
+              "location": "steps\\steps_market_maintainance.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Verify Configurable Workflow is Enable",
+            "match": {
+              "location": "steps\\steps_cwf.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4581000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qa-184:-cwf-settings-maintainance;qa-182:-verify-ui-elements-configurable-workflow-list-page-&-validate-default-states-and-default-image",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "QA-182: Verify UI elements Configurable workflow list page & Validate Default states and default image",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Navigate to TicketManager website",
+            "match": {
+              "location": "steps\\steps_Login.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6958000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Dismiss_Card_SSA",
+            "match": {
+              "location": "steps\\steps_Login.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17263000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Verify Default Workflow is Disable",
+            "match": {
+              "location": "steps\\steps_cwf.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14667000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Verify Configurable Workflow is Visible in Menu",
+            "match": {
+              "location": "steps\\steps_cwf.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9807000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Verify Headers",
+            "match": {
+              "location": "steps\\steps_cwf.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Verify Title",
+            "match": {
+              "location": "steps\\steps_cwf.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Verify Create Button",
+            "match": {
+              "location": "steps\\steps_cwf.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3016000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Verify List elements",
+            "match": {
+              "location": "steps\\steps_cwf.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2320000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Validate Default image contain all 3 Default states",
+            "match": {
+              "location": "steps\\steps_cwf.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2015000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qa-184:-cwf-settings-maintainance;qa-193:-create-custom-user-groups-for-cwf",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "QA-193: Create custom user groups for CWF",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Navigate to TicketManager website",
+            "match": {
+              "location": "steps\\steps_Login.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Dismiss_Card_SSA",
+            "match": {
+              "location": "steps\\steps_Login.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17751000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Set Order Purpose approver",
+            "match": {
+              "location": "steps\\steps_cwf.js:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23576000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "Set Venue Admin",
+            "match": {
+              "location": "steps\\steps_cwf.js:114"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18899000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Navigate to Custom User Settings",
+            "match": {
+              "location": "steps\\steps_cwf.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31559000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Create a user group as \"Automator\" and add users in it",
+            "match": {
+              "location": "steps\\steps_cwf.js:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26983000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Add Admin using Filter in \"Automator\"",
+            "match": {
+              "location": "steps\\steps_cwf.js:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16682000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qa-184:-cwf-settings-maintainance;qa-195:-attach-workflow-on-ticket-and-multiple-using-bulk-edit",
+        "keyword": "Scenario",
+        "line": 75,
+        "name": "QA-195: Attach workflow on ticket and multiple using Bulk Edit",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Navigate to TicketManager website",
+            "match": {
+              "location": "steps\\steps_Login.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6322000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "Navigate to Ticket Inventory",
+            "match": {
+              "location": "steps\\steps_cwf.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24333000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 77,
+            "name": "Attach Workflow on ticket as \"Automator with permission\" via inventory and as well as from workflow assignment report IF getting error",
+            "match": {
+              "location": "steps\\steps_cwf.js:123"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141094000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 78,
+            "name": "Attach Workflow on ticket as \"Automator with permission\" using Bulk Edit",
+            "match": {
+              "location": "steps\\steps_cwf.js:126"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 45408000000,
+              "error_message": "page.click: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"(//input[@type='checkbox'])[6]\"\n  selector resolved to hidden <input value=\"1\" type=\"checkbox\" id=\"showTableChartBar\"…/>\nattempting click action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n    at CWF.Attach_Workflow_on_ticket_bulk_Edit (C:\\Users\\hp\\office\\Prod_Script\\page_object\\cwf.page.js:387:20)\n    at async World.<anonymous> (C:\\Users\\hp\\office\\Prod_Script\\steps\\steps_cwf.js:127:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 79,
+            "name": "Attach Same Workflow on ticket as \"Automator with permission\"",
+            "match": {
+              "location": "steps\\steps_cwf.js:129"
             },
             "result": {
               "status": "skipped",
@@ -68,10 +400,100 @@
       },
       {
         "description": "",
-        "id": "qa-182:-cwf-settings-maintainance;qa-181:-validate-default-states-and-default-image",
+        "id": "qa-184:-cwf-settings-maintainance;qa-185==>--create-order-with-invitee-for-worflow-assigned-event",
         "keyword": "Scenario",
-        "line": 32,
-        "name": "QA-181: Validate Default states and default image",
+        "line": 83,
+        "name": "QA-185==>  Create order with invitee for worflow assigned event",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Navigate to TicketManager website",
+            "match": {
+              "location": "steps\\steps_Login.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7772000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 84,
+            "name": "Dismiss_Card_SSA",
+            "match": {
+              "location": "steps\\steps_Login.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16714000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 85,
+            "name": "Move on event and Insert Ticket details as order type \"Personal Use\" for \"SSA\"",
+            "match": {
+              "location": "steps\\steps_cwf.js:132"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4889000000,
+              "error_message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://app1.spotlighttms.com/app/event-detail/22993194\", waiting until \"load\"\n============================================================\n    at CWF.Move_on_event_Insert_Ticket_Details (C:\\Users\\hp\\office\\Prod_Script\\page_object\\cwf.page.js:288:20)\n    at async World.<anonymous> (C:\\Users\\hp\\office\\Prod_Script\\steps\\steps_cwf.js:133:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 86,
+            "name": "Insert first invitee detail for \"SSA\"",
+            "match": {
+              "location": "steps\\steps_order_creation.js:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 87,
+            "name": "Insert all \"1\" invitee details",
+            "match": {
+              "location": "steps\\steps_order_creation.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 88,
+            "name": "Submit CWF Ticket",
+            "match": {
+              "location": "steps\\steps_cwf.js:144"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qa-184:-cwf-settings-maintainance;qa-185==>--login-csa",
+        "keyword": "Scenario",
+        "line": 92,
+        "name": "QA-185==>  login CSA",
         "steps": [
           {
             "arguments": [],
@@ -83,17 +505,30 @@
             },
             "result": {
               "status": "failed",
-              "duration": 68000000,
-              "error_message": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://app01-qa10.spotlighttms.com/\n=========================== logs ===========================\nnavigating to \"https://app01-qa10.spotlighttms.com/\", waiting until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Playwright-Cucumber\\page_object\\login.page.js:33:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Playwright-Cucumber\\steps\\steps_Login.js:12:21)"
+              "duration": 6000000,
+              "error_message": "page.waitForNavigation: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Prod_Script\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Prod_Script\\steps\\steps_Login.js:12:21)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
-            "name": "Navigate to Configurable Workflow",
+            "line": 93,
+            "name": "logout SSA",
             "match": {
-              "location": "steps\\steps_cwf.js:43"
+              "location": "steps\\steps_Login.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 94,
+            "name": "We Enter Login Creds \"uaslam1000@gmail.com\" and \"Test12345\"",
+            "match": {
+              "location": "steps\\steps_Login.js:17"
             },
             "result": {
               "status": "skipped",
@@ -103,10 +538,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 34,
-            "name": "Sort workflows by Date updated Desc and edit workflow",
+            "line": 95,
+            "name": "move on landing page",
             "match": {
-              "location": "steps\\steps_cwf.js:47"
+              "location": "steps\\steps_Login.js:24"
             },
             "result": {
               "status": "skipped",
@@ -116,10 +551,565 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
-            "name": "Add State as \"Pending Manager\" and verify UI elements",
+            "line": 96,
+            "name": "Dismiss_Card",
             "match": {
-              "location": "steps\\steps_cwf.js:50"
+              "location": "steps\\steps_Login.js:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "Move Previous order in next state",
+            "match": {
+              "location": "steps\\steps_cwf.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 98,
+            "name": "Move on event and Insert Ticket details as order type \"<Order_type>\" for \"CSA\"",
+            "match": {
+              "location": "steps\\steps_cwf.js:132"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 99,
+            "name": "Insert first invitee detail for \"CSA\"",
+            "match": {
+              "location": "steps\\steps_order_creation.js:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 100,
+            "name": "Insert all \"<no_of_tickets>\" invitee details",
+            "match": {
+              "location": "steps\\steps_order_creation.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 101,
+            "name": "Submit CWF Ticket Inline",
+            "match": {
+              "location": "steps\\steps_cwf.js:150"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 102,
+            "name": "Perform Inline Transitons and move Next",
+            "match": {
+              "location": "steps\\steps_cwf.js:153"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qa-184:-cwf-settings-maintainance;qa-185==>--login-admin",
+        "keyword": "Scenario",
+        "line": 106,
+        "name": "QA-185==>  login ADMIN",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Navigate to TicketManager website",
+            "match": {
+              "location": "steps\\steps_Login.js:11"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 9000000,
+              "error_message": "page.waitForNavigation: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Prod_Script\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Prod_Script\\steps\\steps_Login.js:12:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 107,
+            "name": "logout SSA",
+            "match": {
+              "location": "steps\\steps_Login.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 108,
+            "name": "We Enter Login Creds \"uaslam1004@gmail.com\" and \"Test12345\"",
+            "match": {
+              "location": "steps\\steps_Login.js:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 109,
+            "name": "move on landing page",
+            "match": {
+              "location": "steps\\steps_Login.js:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 110,
+            "name": "Dismiss_Card",
+            "match": {
+              "location": "steps\\steps_Login.js:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 111,
+            "name": "Move Previous order in next state",
+            "match": {
+              "location": "steps\\steps_cwf.js:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 112,
+            "name": "Move on event and Insert Ticket details as order type \"<Order_type>\" for \"Admin\"",
+            "match": {
+              "location": "steps\\steps_cwf.js:132"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 113,
+            "name": "Insert first invitee detail for \"Admin\"",
+            "match": {
+              "location": "steps\\steps_order_creation.js:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 114,
+            "name": "Insert all \"<no_of_tickets>\" invitee details",
+            "match": {
+              "location": "steps\\steps_order_creation.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 115,
+            "name": "Submit CWF Ticket",
+            "match": {
+              "location": "steps\\steps_cwf.js:144"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 116,
+            "name": "Perform Inline Transitons and move Next",
+            "match": {
+              "location": "steps\\steps_cwf.js:153"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qa-184:-cwf-settings-maintainance;qa-185==>--verify-bulk-order-approval-multiple-ticket-groups-multiple-orders",
+        "keyword": "Scenario",
+        "line": 120,
+        "name": "QA-185==>  Verify Bulk order Approval Multiple Ticket Groups multiple orders",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Navigate to TicketManager website",
+            "match": {
+              "location": "steps\\steps_Login.js:11"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5000000,
+              "error_message": "page.waitForNavigation: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Prod_Script\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Prod_Script\\steps\\steps_Login.js:12:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 121,
+            "name": "Dismiss_Card",
+            "match": {
+              "location": "steps\\steps_Login.js:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 122,
+            "name": "Move on event and Insert Ticket details as order type \"<Order_type>\" for \"Admin\" \"1\"",
+            "match": {
+              "location": "steps\\steps_cwf.js:135"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 123,
+            "name": "Insert first invitee detail for \"Admin\"",
+            "match": {
+              "location": "steps\\steps_order_creation.js:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 124,
+            "name": "Submit CWF Ticket Only",
+            "match": {
+              "location": "steps\\steps_cwf.js:147"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 125,
+            "name": "Move on event and Insert Ticket details as order type \"<Order_type>\" for \"Admin\" \"2\"",
+            "match": {
+              "location": "steps\\steps_cwf.js:135"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 126,
+            "name": "Insert first invitee detail for \"Admin\"",
+            "match": {
+              "location": "steps\\steps_order_creation.js:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 127,
+            "name": "Submit CWF Ticket Only",
+            "match": {
+              "location": "steps\\steps_cwf.js:147"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 128,
+            "name": "Perform Bulk Order",
+            "match": {
+              "location": "steps\\steps_cwf.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qa-184:-cwf-settings-maintainance;qa-185==>--login-standard-user",
+        "keyword": "Scenario",
+        "line": 132,
+        "name": "QA-185==>  login standard user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Navigate to TicketManager website",
+            "match": {
+              "location": "steps\\steps_Login.js:11"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8000000,
+              "error_message": "page.waitForNavigation: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Prod_Script\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Prod_Script\\steps\\steps_Login.js:12:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 133,
+            "name": "logout SSA",
+            "match": {
+              "location": "steps\\steps_Login.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 134,
+            "name": "We Enter Login Creds \"uaslam1001@gmail.com\" and \"Test12345\"",
+            "match": {
+              "location": "steps\\steps_Login.js:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 135,
+            "name": "move on landing page",
+            "match": {
+              "location": "steps\\steps_Login.js:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 136,
+            "name": "Dismiss_Card",
+            "match": {
+              "location": "steps\\steps_Login.js:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 137,
+            "name": "Move on event and Insert Ticket details as order type \"<Order_type>\" for \"standard User\"",
+            "match": {
+              "location": "steps\\steps_cwf.js:132"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 138,
+            "name": "Insert first invitee detail for \"standard User\"",
+            "match": {
+              "location": "steps\\steps_order_creation.js:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 139,
+            "name": "Insert all \"<no_of_tickets>\" invitee details",
+            "match": {
+              "location": "steps\\steps_order_creation.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 140,
+            "name": "Submit CWF Ticket",
+            "match": {
+              "location": "steps\\steps_cwf.js:144"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "qa-184:-cwf-settings-maintainance;qa-185==>--create-package-order-with-invitee",
+        "keyword": "Scenario",
+        "line": 144,
+        "name": "QA-185==>  Create package order with invitee",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "Navigate to TicketManager website",
+            "match": {
+              "location": "steps\\steps_Login.js:11"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3000000,
+              "error_message": "page.waitForNavigation: Navigation failed because page was closed!\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.navigate (C:\\Users\\hp\\office\\Prod_Script\\page_object\\login.page.js:32:18)\n    at World.<anonymous> (C:\\Users\\hp\\office\\Prod_Script\\steps\\steps_Login.js:12:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 145,
+            "name": "Dismiss_Card_SSA",
+            "match": {
+              "location": "steps\\steps_Login.js:43"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 146,
+            "name": "Create package order",
+            "match": {
+              "location": "steps\\steps_cwf.js:138"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 147,
+            "name": "Submit CWF Ticket",
+            "match": {
+              "location": "steps\\steps_cwf.js:144"
             },
             "result": {
               "status": "skipped",
@@ -131,10 +1121,10 @@
         "type": "scenario"
       }
     ],
-    "id": "qa-182:-cwf-settings-maintainance",
+    "id": "qa-184:-cwf-settings-maintainance",
     "line": 1,
     "keyword": "Feature",
-    "name": "QA-182: CWF Settings Maintainance",
+    "name": "QA-184: CWF Settings Maintainance",
     "tags": [],
     "uri": "features\\QA-182.feature"
   }

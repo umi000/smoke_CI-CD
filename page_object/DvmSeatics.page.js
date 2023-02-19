@@ -57,7 +57,7 @@ class DvmSeatics {
         await page.waitForTimeout(3000);
 
         // await page.reload();
-        await page.goto('https://app01-qa10.spotlighttms.com/app/event-detail/3898448'); //22479994  //best 22484180
+        await page.goto('https://app1.spotlighttms.com/app/event-detail/3898448'); //22479994  //best 22484180
         await page.waitForTimeout(5000);
 
         // await page.click(DVMLocator.Landing_1stEventCard.toString());
@@ -67,7 +67,7 @@ class DvmSeatics {
         // await page.waitForTimeout(3000);
         this.sleep(2000);
 
-        await page.goto('https://app01-qa10.spotlighttms.com/app/event-detail/3898448'); //22479994  //best 22484180  22484278
+        await page.goto('https://app1.spotlighttms.com/app/event-detail/3898448'); //22479994  //best 22484180  22484278
         // await page.waitForTimeout(5000);
         for (let i = 0; i <= 20; i++) {
             try {
@@ -89,7 +89,7 @@ class DvmSeatics {
         // await page.reload();
         await Promise.all([
             page.waitForNavigation({ timeout: 50000 }),
-            page.goto(`https://app01-qa10.spotlighttms.com/app/event-detail/3898448`)
+            page.goto(`https://app1.spotlighttms.com/app/event-detail/3898448`)
         ]);
         for (let i = 7; i > 0; i--) {
             this.sleep(5000);

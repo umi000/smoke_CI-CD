@@ -12,6 +12,22 @@ class MarketMaintainance {
             }
         }
     }
+
+    async end_tour() {
+        // this.sleep(2000);
+        // try {
+        //     await Promise.all([
+        //         page.waitForNavigation({ timeout: 50000 }),
+        //         page.goto(`https://app01-qa10.spotlighttms.com/customerFeatures/list`)
+        //     ]);
+        //     this.sleep(5000);
+        //     await page.click(`#step-7 > div.popover-navigation > button`);
+        //     await Promise.all([
+        //         page.waitForNavigation({ timeout: 50000 }),
+        //         page.goto(locator.locators.url.toString())
+        //     ]);
+        // } catch {}
+    }
     async select_customer_feature() {
 
         this.sleep(10000);

@@ -14,6 +14,9 @@ Then('Select Location as {string} and ticket as {string}', async(location, type)
 Then('Insert Ticket details as order type {string} for {string}', async(order_type, user) => {
     await landingpage.Insert_Ticket_Details(order_type, user);
 });
+Then(`Move on event and Insert Ticket details as order type  {string} for {string}`, async(order_type, user) => {
+    await landingpage.Move_on_event_Insert_Ticket_Details(order_type, user);
+});
 Then('Submit Ticket', async() => {
     await landingpage.Submit_Ticket();
 });
