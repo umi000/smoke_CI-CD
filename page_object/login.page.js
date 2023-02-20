@@ -162,6 +162,11 @@ class LoginPage {
         // }
         await page.waitForSelector(locator.locators.DismissButton.toString());
         await page.click(locator.locators.DismissButton.toString());
+        this.sleep(3000);
+        await page.click(`//button[@name='shopping cart']//i[1]`);
+        try { await page.click(`(//a[@aria-label='delete']//i)[1]`); } catch {}
+        try { await page.click(`(//a[@aria-label='delete']//i)[2]`); } catch {}
+        try { await page.click(`(//a[@aria-label='delete']//i)[3]`); } catch {}
         // await page.waitForSelector(locator.locators.LogOutHover.toString());
 
     }
@@ -180,6 +185,12 @@ class LoginPage {
             await page.click('text=Dismiss');
         } //else { console.log('not found'); }
 
+        this.sleep(3000);
+        await page.click(`//button[@name='shopping cart']//i[1]`);
+
+        try { await page.click(`(//a[@aria-label='delete']//i)[1]`); } catch {}
+        try { await page.click(`(//a[@aria-label='delete']//i)[2]`); } catch {}
+        try { await page.click(`(//a[@aria-label='delete']//i)[3]`); } catch {}
         this.sleep(3000);
 
     }
@@ -212,6 +223,12 @@ class LoginPage {
                 await page.click('text=Dismiss');
             } //else { console.log('not found'); }
         }
+
+        this.sleep(3000);
+        await page.click(`//button[@name='shopping cart']//i[1]`);
+        try { await page.click(`(//a[@aria-label='delete']//i)[1]`); } catch {}
+        try { await page.click(`(//a[@aria-label='delete']//i)[2]`); } catch {}
+        try { await page.click(`(//a[@aria-label='delete']//i)[3]`); } catch {}
         this.sleep(3000);
 
     }

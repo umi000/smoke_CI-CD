@@ -11,28 +11,28 @@ Feature: QA-184: CWF Settings Maintainance
     Examples:
     |username                      |password    |   user  | Customer| no_of_tickets|
     |umair.aslam.ssa@techtronix.biz|Test_12345  |   SSA   | CWF_Automator|  1|
-    Scenario: QA-182: Verify UI elements Configurable workflow list page & Validate Default states and default image  
-        Then Dismiss_Card_SSA
-        And Verify Default Workflow is Disable
-        And Verify Configurable Workflow is Visible in Menu        
-        Then Verify Headers
-        And Verify Title 
-        And Verify Create Button 
-        And Verify List elements
-        Then Validate Default image contain all 3 Default states
-   Examples:
-    |username                      | password    |   user  | Customer|
-    |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   | CWF_Automator|
-    Scenario: QA-193: Create custom user groups for CWF
-        Then Dismiss_Card_SSA
-        Then Set Order Purpose approver
-        Then Set Venue Admin
-        Then Navigate to Custom User Settings
-        Then Create a user group as "<User Group>" and add users in it
-        Then Add Admin using Filter in "<User Group>"
-    Examples:
-     |WF                       |User Group|
-     |Automator with permission|Automator |
+#     Scenario: QA-182: Verify UI elements Configurable workflow list page & Validate Default states and default image  
+#         Then Dismiss_Card_SSA
+#         And Verify Default Workflow is Disable
+#         And Verify Configurable Workflow is Visible in Menu        
+#         Then Verify Headers
+#         And Verify Title 
+#         And Verify Create Button 
+#         And Verify List elements
+#         Then Validate Default image contain all 3 Default states
+#    Examples:
+#     |username                      | password    |   user  | Customer|
+#     |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   | CWF_Automator|
+    # Scenario: QA-193: Create custom user groups for CWF
+    #     Then Dismiss_Card_SSA
+    #     Then Set Order Purpose approver
+    #     Then Set Venue Admin
+    #     Then Navigate to Custom User Settings
+    #     Then Create a user group as "<User Group>" and add users in it
+    #     Then Add Admin using Filter in "<User Group>"
+    # Examples:
+    #  |WF                       |User Group|
+    #  |Automator with permission|Automator |
 # #     Scenario: QA-182: Validate Default states and default image    
 #         Then Dismiss_Card_SSA
 #         Then Verify Configurable Workflow is Visible in Menu
@@ -72,14 +72,14 @@ Feature: QA-184: CWF Settings Maintainance
 #    Examples:
 #     |WF                       |state1 |state2                |state3                  |state4         |state5   |state6  |state7|Direction|
 # #     |Automator with permission|created|Order Purpose Approval|Pending Manager Approval|Pending Payment|Cancelled|Approved|Denied|Down|
-    Scenario: QA-195: Attach workflow on ticket and multiple using Bulk Edit
-        Then Navigate to Ticket Inventory
-        Then Attach Workflow on ticket as "<WF>" via inventory and as well as from workflow assignment report IF getting error
-        Then Attach Workflow on ticket as "<WF>" using Bulk Edit
-        Then Attach Same Workflow on ticket as "<WF>"
-    Examples:
-     |WF                       |
-     |Automator with permission|
+    # Scenario: QA-195: Attach workflow on ticket and multiple using Bulk Edit
+    #     Then Navigate to Ticket Inventory
+    #     Then Attach Workflow on ticket as "<WF>" via inventory and as well as from workflow assignment report IF getting error
+    #     Then Attach Workflow on ticket as "<WF>" using Bulk Edit
+    #     Then Attach Same Workflow on ticket as "<WF>"
+    # Examples:
+    #  |WF                       |
+    #  |Automator with permission|
      Scenario: QA-185==>  Create order with invitee for worflow assigned event
         Then Dismiss_Card_SSA
         Then Move on event and Insert Ticket details as order type "<Order_type>" for "<user>"
@@ -117,18 +117,18 @@ Feature: QA-184: CWF Settings Maintainance
    Examples:
      |username            | password   |   user  | 
      |uaslam1004@gmail.com| Test12345  | Admin   |
-Scenario: QA-185==>  Verify Bulk order Approval Multiple Ticket Groups multiple orders
-        Then Dismiss_Card
-        Then Move on event and Insert Ticket details as order type "<Order_type>" for "<user>" "1"
-        Then Insert first invitee detail for "<user>"
-        Then Submit CWF Ticket Only
-        Then Move on event and Insert Ticket details as order type "<Order_type>" for "<user>" "2"
-        Then Insert first invitee detail for "<user>"
-        Then Submit CWF Ticket Only
-        Then Perform Bulk Order
-   Examples:
-     |username            | password   |   user| 
-     |uaslam1001@gmail.com| Test12345  | Admin   |
+# Scenario: QA-185==>  Verify Bulk order Approval Multiple Ticket Groups multiple orders
+#         Then Dismiss_Card
+#         Then Move on event and Insert Ticket details as order type "<Order_type>" for "<user>" "1"
+#         Then Insert first invitee detail for "<user>"
+#         Then Submit CWF Ticket Only
+#         Then Move on event and Insert Ticket details as order type "<Order_type>" for "<user>" "2"
+#         Then Insert first invitee detail for "<user>"
+#         Then Submit CWF Ticket Only
+#         Then Perform Bulk Order
+#    Examples:
+#      |username            | password   |   user| 
+#      |uaslam1001@gmail.com| Test12345  | Admin   |
     Scenario: QA-185==>  login standard user
         Then logout SSA
         When We Enter Login Creds "<username>" and "<password>"

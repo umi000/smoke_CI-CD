@@ -1051,7 +1051,7 @@ class CWF {
     async MovetoNextState_inline(num) {
         var status = ``;
         await this.sleep(5000);
-        await page.waitForSelector(`//td[contains(@class,'tdborder_newUI ')]//input[1]`);
+        await page.waitForSelector(`//td[contains(@class,'tdborder_newUI')]//input[1]`);
         await page.click(`(//tr[@valign='top']//td)[3]`);
         await page.waitForSelector(`(//input[@type='checkbox'])[2]`);
         await page.click(`(//input[@type='checkbox'])[2]`);
