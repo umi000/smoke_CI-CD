@@ -3,7 +3,6 @@ on:
     - cron: "59 23 * * *"
   push:
     branches:
-    - main
     - cwf_smoke
 
 jobs: 
@@ -23,3 +22,8 @@ jobs:
         with:
           name: test-result-report
           path: report/cucumber-html-report.html
+#      - name: Cucumber Report to Annotations
+#        uses: deblockt/cucumber-report-annotations-action@v1.7
+#        with:
+#          access-token: ${{ secrets.GITHUB_TOKEN }}
+#          path: "**/cucumber-report.json"
