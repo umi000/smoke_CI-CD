@@ -4,7 +4,7 @@ on:
   push:
     branches:
     - main
-
+  
 jobs: 
   e2e-tests:
     runs-on: windows-latest # or macos-latest, ubuntu-latest,, windows
