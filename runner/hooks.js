@@ -1,4 +1,5 @@
 const { BeforeAll, Before, AfterAll, After, Status } = require('cucumber')
+const cucumberHtmlReporter = require('cucumber-html-reporter');
 const { chromium } = require('playwright');
 const fs = require('fs')
 var path = require('path');
