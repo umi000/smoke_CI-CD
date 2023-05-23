@@ -14,7 +14,7 @@ BeforeAll(async() => {
     global.browser = await chromium.launch(options);
     global.context = await global.browser.newContext({});
     global.page = await global.context.newPage();
-    await page.setDefaultNavigationTimeout(60000);
+    await page.setDefaultNavigationTimeout(6000000);
     // global.page2 = await global.context.newPage();
 });
 
@@ -66,14 +66,17 @@ After(async function (testCase) {
 AfterAll(() => {
   cucumberHtmlReporter.generate({
     theme: 'bootstrap',
-    jsonFile: './report/cucumber-report.json',
-    output: './report/cucumber-report.html',
+    jsonFile: './report/report.json',
+    output: './report/cucumber-html-report.html',
     reportSuiteAsScenarios: true,
     launchReport: true,
   });
-});
-
-AfterAll(async() => {
+    
     await global.page.close();
     await global.browser.close();
 });
+
+// AfterAll(async() => {
+//     await global.page.close();
+//     await global.browser.close();
+// });
