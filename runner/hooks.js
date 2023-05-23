@@ -54,6 +54,25 @@ BeforeAll(async() => {
 //     // await global.page2.close();
 //     // global.context.close();
 // });
+// After hook to capture screenshot on test failure
+After(async function (testCase) {
+  if (testCase.result.status === 'failed') {
+    const screenshotPath = `./screenshots/${testCase.pickle.name.replace(/\s+/g, '_')}.png`;
+    await this.browser.screenshot({ path: screenshotPath });
+  }
+});
+
+// AfterAll hook to generate HTML report
+AfterAll(() => {
+  cucumberHtmlReporter.generate({
+    theme: 'bootstrap',
+    jsonFile: './report/cucumber-report.json',
+    output: './report/cucumber-report.html',
+    reportSuiteAsScenarios: true,
+    launchReport: true,
+  });
+});
+
 AfterAll(async() => {
     await global.page.close();
     await global.browser.close();
