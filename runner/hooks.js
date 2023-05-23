@@ -63,8 +63,8 @@ After(async function (testCase) {
 });
 
 // AfterAll hook to generate HTML report
-AfterAll(() => {
-  cucumberHtmlReporter.generate({
+AfterAll(async() => {
+  await cucumberHtmlReporter.generate({
     theme: 'bootstrap',
     jsonFile: './report/report.json',
     output: './report/cucumber-html-report.html',
