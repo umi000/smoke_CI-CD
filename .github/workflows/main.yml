@@ -23,7 +23,7 @@ jobs:
           name: test-result-report
           path: report/cucumber-html-report.html
       - name: Send Slack Notification
-        uses: slack/webhook-action@master
+        uses: slackapi/slack-github-action@v1.24.0   #slack/webhook-action@master
         env:
           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
         with:
