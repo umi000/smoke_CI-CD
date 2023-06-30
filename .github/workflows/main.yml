@@ -23,7 +23,7 @@ jobs:
           name: test-result-report
           path: report/cucumber-html-report.html
       - name: Send Slack Notification
-        uses: joelwmale/webhook-action@2.3.2   #slack/webhook-action@master
+        uses: slack/webhook-action@master   #slack/webhook-action@master
         env:
           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
         with:
