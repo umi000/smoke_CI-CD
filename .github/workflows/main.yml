@@ -29,10 +29,10 @@ jobs:
           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
         with:
           channel: '#regression_job'
-          username: regression_job
+          username: UI_API_Automator_job
           text: "Script has been run succesfully, here are the attached results: "
           status: success
       - name: Read Run tests logs
         run: |
           echo "Step 1 logs:"
-          cat ${{ format('{0}_{1}.log', runner.workspace, steps.Run_Tests.id) }}   
+          cat ${{ format('{0}_{1}.log', runner.workspace, steps.Run_Tests.run) }}   
