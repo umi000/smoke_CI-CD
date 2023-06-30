@@ -18,7 +18,8 @@ jobs:
         
       - name: Run_Tests
         id: Run_Tests
-        run: npm test  >> $GITHUB_OUTPUT
+        run: |
+         result = npm test  
         
       - name: Upload test results
         if: always()
@@ -41,5 +42,5 @@ jobs:
         with:
           channel: '#regression_job'
           username: UI_API_Automator_job
-          text:  ${{join(steps.run_tests.outputs.*, '\n b jbvhjkghj')}} 
+          text:  ${{join(steps.run_tests.result.*, '\n b jbvhjkghj')}} 
           status: success    
