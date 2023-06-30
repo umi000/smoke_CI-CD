@@ -41,5 +41,5 @@ jobs:
         with:
           channel: '#regression_job'
           username: UI_API_Automator_job
-          text:  ${{join(steps.run_tests.id.*, '\n b jbvhjkghj')}} 
+          text:  ${{join(steps.run_tests, '\n b jbvhjkghj')}} 
           status: success    
