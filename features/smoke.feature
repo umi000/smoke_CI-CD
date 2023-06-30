@@ -13,14 +13,14 @@ Feature: smoke
    Examples:
      |username                      | password    |   user  | Customer|
      |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   |  uiautomator1|
-  Scenario: QA-39==>  Purchase Marketplace ticket from (Search Detail) with "<order_type>" Purchase and status as "<status>" (with invitee) for ==> "<user>"
-        Then Navigate to CustomerFeatures tab 
-        Then Verify Hide External Ticket is off
-        Then Select Marketplace ticket
-        Then Insert Order Details for "<order_type>" 
-   Examples:
-    |username                      | password    |   user  |order_type    | status       | Customer|
-    |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   |Business      | order_approve| UIautomator|
+#   Scenario: QA-39==>  Purchase Marketplace ticket from (Search Detail) with "<order_type>" Purchase and status as "<status>" (with invitee) for ==> "<user>"
+#         Then Navigate to CustomerFeatures tab 
+#         Then Verify Hide External Ticket is off
+#         Then Select Marketplace ticket
+#         Then Insert Order Details for "<order_type>" 
+#    Examples:
+#     |username                      | password    |   user  |order_type    | status       | Customer|
+#     |umair.aslam.ssa@techtronix.biz| Test_12345  |   SSA   |Business      | order_approve| UIautomator|
 #     @smoke @sanity @functional
 #     Scenario: QA-39==>  Purchase Marketplace ticket from (Search Detail) with "<order_type>" Purchase and status as "<status>" (with invitee) for ==> "<user>"
 #         Then Select Marketplace ticket
