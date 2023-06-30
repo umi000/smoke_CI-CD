@@ -39,4 +39,9 @@ jobs:
           "channel": "C05F1H75C4S"
           "username": "regression_job"
           "text": "Script has been run succesfully, here are the attached results: "
+      - name: Read Run tests logs
+        run: |
+          echo "Step 1 logs:"
+          cat ${{ format('{0}_{1}.log', runner.workspace, jobs.my-job.steps.step1.id) }}
+
             
