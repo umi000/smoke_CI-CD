@@ -15,7 +15,7 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
         with:
-          channel: C05F1H75C4S
+          channel: '#regression_job'
           username: regression_job
           text: "Script has been run succesfully, here are the attached results: "
           status: success
