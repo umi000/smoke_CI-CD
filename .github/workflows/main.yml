@@ -34,7 +34,7 @@ jobs:
           cat ${{ format('{0}_{1}.log', runner.workspace, steps.Run_Tests.id) }}
           
       - name: Send Slack Notification
-        uses: 8398a7/action-slack@v3   #slack/webhook-action@master
+        uses: rtCamp/action-slack-notify@v2      #8398a7/action-slack@v3   #slack/webhook-action@master
         env:
           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
           CUCUMBER_REPORT_URL: ${{ steps.log_extraction.outputs.cucumber_report_url }}
