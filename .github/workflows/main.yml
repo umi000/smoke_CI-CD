@@ -32,10 +32,7 @@ jobs:
         run: |
           echo "Step 1 logs:"
           cat ${{ format('{0}_{1}.log', runner.workspace, steps.Run_Tests.id) }}
-          # Extract the Cucumber report URL and store it in a file
-          # Use appropriate commands or scripts to extract the URL from the log
-
-
+          
       - name: Send Slack Notification
         uses: 8398a7/action-slack@v3   #slack/webhook-action@master
         env:
@@ -44,5 +41,5 @@ jobs:
         with:
           channel: '#regression_job'
           username: UI_API_Automator_job
-          text: "Script has been run succesfully, here are the attached results:  ${{ env.CUCUMBER_REPORT_URL }}" 
+          text:  ${{join(steps.run_tests.outputs.*, '\n')}} 
           status: success    
