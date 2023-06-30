@@ -18,7 +18,7 @@ jobs:
         
       - name: Run_Tests
         id: Run_Tests
-        run: npm test
+        run: npm test  >> $GITHUB_OUTPUT
         
       - name: Upload test results
         if: always()
