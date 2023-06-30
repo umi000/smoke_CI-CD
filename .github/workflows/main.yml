@@ -29,7 +29,7 @@ jobs:
         with:
           args: |
             payload={
-              "channel": "#regression_job",
+              "channel": "C05F1H75C4S",
               "username": "regression_job",
               "text": "Script has been run succesfully, here are the attached results: "
             }
