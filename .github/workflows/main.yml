@@ -31,15 +31,15 @@ jobs:
         id: log_extraction
         run: |
           echo "Step 1 logs:"
-          cat ${{ format('{0}_{1}.log', runner.workspace, steps.Run_Tests.id) }}
+ #          cat ${{ format('{0}_{1}.log', runner.workspace, steps.Run_Tests.id) }}
           
       - name: Send Slack Notification
-        uses: rtCamp/action-slack-notify@v2      #8398a7/action-slack@v3   #slack/webhook-action@master
+        uses: 8398a7/action-slack@v3   #slack/webhook-action@master
         env:
           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
-          CUCUMBER_REPORT_URL: ${{ steps.log_extraction.outputs.cucumber_report_url }}
+#           CUCUMBER_REPORT_URL: ${{ steps.log_extraction.outputs.cucumber_report_url }}
         with:
           channel: '#regression_job'
           username: UI_API_Automator_job
-          text:  ${{join(steps.run_tests.outputs.*, '\n')}} 
+          text:  ${{join(steps.run_tests.outputs.*, '\n b jbvhjkghj')}} 
           status: success    
