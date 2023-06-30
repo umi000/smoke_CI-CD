@@ -15,9 +15,10 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
         with:
-          "channel": "C05F1H75C4S"
-          "username": "regression_job"
-          "text": "Script has been run succesfully, here are the attached results: "
+          channel: C05F1H75C4S
+          username: regression_job
+          text: "Script has been run succesfully, here are the attached results: "
+          status: success
       - name: Install dependencies 
         run: npm install && npx playwright install 
       - name: set Report Path
