@@ -25,11 +25,11 @@ jobs:
       - name: Send Slack Notification
         uses: slack/webhook-action@master
         env:
-          SLACK_WEBHOOK_URL: ${{'https://hooks.slack.com/services/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'}}
+          SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
         with:
           args: |
             payload={
               "channel": "#regression_job",
               "username": "regression_job",
-              "text": "Scrip has been run succesfully, here are the attached results: "
+              "text": "Script has been run succesfully, here are the attached results: "
             }
