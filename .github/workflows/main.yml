@@ -10,6 +10,14 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       - uses: microsoft/playwright-github-action@v1
+      - name: Send Slack Notification
+        uses: 8398a7/action-slack@v3   #slack/webhook-action@master
+        env:
+          SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
+        with:
+          "channel": "C05F1H75C4S"
+          "username": "regression_job"
+          "text": "Script has been run succesfully, here are the attached results: "
       - name: Install dependencies 
         run: npm install && npx playwright install 
       - name: set Report Path
@@ -23,13 +31,11 @@ jobs:
           name: test-result-report
           path: report/cucumber-html-report.html
       - name: Send Slack Notification
-        uses: slack/webhook-action@master   #slack/webhook-action@master
+        uses: 8398a7/action-slack@v3   #slack/webhook-action@master
         env:
           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
         with:
-          args: |
-            payload={
-              "channel": "C05F1H75C4S",
-              "username": "regression_job",
-              "text": "Script has been run succesfully, here are the attached results: "
-            }
+          "channel": "C05F1H75C4S"
+          "username": "regression_job"
+          "text": "Script has been run succesfully, here are the attached results: "
+            
