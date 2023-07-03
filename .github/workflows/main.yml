@@ -35,4 +35,4 @@ jobs:
       - name: Print Job Logs
         run: |
           echo "Job Logs:"
-          echo "${{ github.job.e2e_tests}}"
+          echo "${{ github.jobs.steps.e2e_tests}}"
