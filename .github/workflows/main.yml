@@ -30,8 +30,16 @@ jobs:
         with:
           channel: '#regression_job'
           username: UI_API_Automator_job
-          text:  ${{join('Report has been Generated', '\n b jbvhjkghj')}} 
-          status: success    
+          text: |
+            Project Automation test report is generated at http://pages.domainName.com/-/projectPath/-/jobs/$CI_JOB_ID/artifacts/report/index.html
+            *Total: 36*
+            *Passed: 31*
+            *Failed: $5*
+            *Broken: 0*
+            *Skipped: 0*
+            *Duration: 12 minutes and 46 seconds"
+            ${{ join('Report has been Generated', '\n b jbvhjkghj') }}
+          status: success   
       - name: Print Job Logs
         run: |
           echo "Job Logs:"
