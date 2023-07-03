@@ -11,22 +11,18 @@ jobs:
       - uses: actions/setup-node@v3
       - uses: microsoft/playwright-github-action@v1     
       - name: Install dependencies 
-        run: npm install && npx playwright install 
-        
+        run: npm install && npx playwright install         
       - name: set Report Path
         run: SETX /M CUCUMBER_PUBLISH_TOKEN 25e87988-0573-457d-856e-0f5eba8721c0 #793ed325-f0af-45c1-badf-1626d5507bea
-        
       - name: Run_Tests
         id: Run_Tests
-        run: npm test  
-        
+        run: npm test          
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: test-result-report
-          path: report/cucumber-html-report.html    
-          
+          path: report/cucumber-html-report.html              
       - name: Send Slack Notification
         uses: 8398a7/action-slack@v3   #slack/webhook-action@master
         env:
@@ -36,3 +32,7 @@ jobs:
           username: UI_API_Automator_job
           text:  ${{join('Report has been Generated', '\n b jbvhjkghj')}} 
           status: success    
+      - name: Print Job Logs
+        run: |
+          echo "Job Logs:"
+          echo "${{ jobs.e2e-tests.outputs.Run_Tests }}"
