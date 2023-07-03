@@ -14,7 +14,7 @@ jobs:
         run: npm install && npx playwright install 
         
       - name: set Report Path
-        run: SETX /M CUCUMBER_PUBLISH_TOKEN 793ed325-f0af-45c1-badf-1626d5507bea
+        run: SETX /M CUCUMBER_PUBLISH_TOKEN 33f1c503-3a60-42dd-b7e2-07a5ddcd6ca0 #793ed325-f0af-45c1-badf-1626d5507bea
         
       - name: Run_Tests
         id: Run_Tests
