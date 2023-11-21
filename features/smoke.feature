@@ -162,7 +162,7 @@ Feature: smoke
 #         Then Process Multiple "<no_of_tickets>" Shipment using First method
 #         Then Print Packing List
 #         Then test
-#     Examples:
+#     Examples: 
 #         |           username           | password |user| Order_type |    status   |   status2   |   status3   |is_approve_directly| PaymentData |no_of_tickets|
 #         |umair.aslam.ssa@techtronix.biz|Test_12345| SSA|Business Use|order_approve|order_approve|order_approve|         1         |First Data QA|      2      |
 #     Scenario: QA-48==>  Verify Workflow for Payment Processing (Alpha)
