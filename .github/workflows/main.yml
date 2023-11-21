@@ -1,8 +1,7 @@
 on:
   push:
     branches:
-    - test_sub_Brach   
-
+    - test_sub_Brach  
 jobs:
   e2e-tests:
     runs-on: windows-latest # or macos-latest, ubuntu-latest,, windows
