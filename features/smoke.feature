@@ -8,7 +8,7 @@ Feature: smoke ci cd
   Scenario: QA-38==>  login as a "<user>"
     When We Enter Login Creds "<username>" and "<password>"
     Then move on landing page
-    Then select customer as "<Customer>"
+    Then select customer as "<Customer>" 
     Then Dismiss_Card_SSA
    Examples:
      |username                      | password    |   user  | Customer|
