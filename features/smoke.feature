@@ -1,7 +1,7 @@
 Feature: smoke ci cd
   Background: Navigation
     Given Navigate to TicketManager website ==> "https://app01-qa10.spotlighttms.com/"
-  @smoke @sanity
+  @smoke @sanity @check
   Scenario: QA-38==>  Is Portal Deployed
     When We Enter Login Creds "<username>" and "<password>"  
   @regression @E2E 
